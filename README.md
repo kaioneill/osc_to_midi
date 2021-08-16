@@ -12,7 +12,7 @@ current status can be seen at [hikai.net](https://hikai.net/posts/kinect_instrum
 
 run tests with `pytest -s`.
 
-useful snippet similar enough to Ruby's 'binding.pry'.
+useful snippet similar enough to Ruby's `binding.pry`.
 
 ```python
 import code; code.interact(local=dict(globals(), **locals()))
