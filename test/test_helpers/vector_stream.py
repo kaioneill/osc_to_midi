@@ -22,9 +22,9 @@ def vector_stream(length=100):
 
 # takes value -1..1 and converts to 0..1
 def normalize1(val):
-    (val + 1) * 0.5
+    return (val + 1) * 0.5
 
 
 # takes value -1..1 and converts to 0..7
 def normalize7(val):
-    (val + 1) * (7 / 2.0)
+    return (val + 1) * (7 / 2.0)
