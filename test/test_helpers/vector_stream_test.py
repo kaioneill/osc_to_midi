@@ -1,9 +1,7 @@
 from test.test_helpers.vector_stream import vector_stream
-import sys
 
 
 def test_vector_stream():
-    print(sys.path)
     result = vector_stream()
 
     assert len(result) == 100
