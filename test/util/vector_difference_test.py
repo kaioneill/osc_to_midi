@@ -1,5 +1,5 @@
 import random
-from app.stream.vector_difference import vector_difference
+from app.util.vector_difference import vector_difference
 
 
 def test_vector_difference():
@@ -16,5 +16,5 @@ def test_vector_difference():
 
     result = vector_difference(vector1, vector2)
 
-    assert result <= 127
+    assert result <= 9
     assert result >= 0
