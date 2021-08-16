@@ -47,7 +47,7 @@ PATH="$VIRTUAL_ENV/bin:$PATH"
 export PATH
 
 export OLD_PYTHONPATH="$PYTHONPATH"
-export PYTHONPATH="lib/python3.9/sitepackages"
+export PYTHONPATH="lib/python3.9/site-packages"
 
 # unset PYTHONHOME if set
 # this will fail if PYTHONHOME is set to the empty string (which is bad anyway)
