@@ -1,4 +1,3 @@
-import random
 from app.trigger.above_threshold import above_threshold
 
 

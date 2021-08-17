@@ -9,11 +9,11 @@ def vector_stream(length=100):
 
     step = 0.0
     for i in range(length):
-        step += 1 / float(length)
+        step += 10 / float(length)
         stream.append(
             [
                 normalize1(x(step)),
-                normalize1(y(step)),
+                normalize1(y(step, octaves=2, base=2)),
                 normalize7(z(step))
             ])
 
