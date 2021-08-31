@@ -17,3 +17,9 @@ useful snippet similar enough to Ruby's `binding.pry`.
 ```python
 import code; code.interact(local=dict(globals(), **locals()))
 ```
+
+virtual environment started with
+
+```bash
+source bin/activate
+```
