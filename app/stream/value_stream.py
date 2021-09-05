@@ -1,15 +1,24 @@
 from app.util.vector_difference import vector_difference
 
 
-def value_stream(vector1, vector2):
-    weight = 3
+class ValueStream:
 
-    difference = vector_difference(vector1, vector2)
+    def __init__(self):
+        self.last_vector = [0.0, 0.0, 0.0]
+        self.min_val = 20.0
 
-    difference *= 10.0
+    def value_stream(self, vector):
+        weight = 3
 
-    # val = (difference / weight) * 127
-    val = difference * 127.0
+        difference = vector_difference(self.last_vector, vector)
+        self.last_vector = vector
 
-    val = 127.0 if val > 127.0 else val
-    return int(val)
+        difference *= 10.0
+
+        # val = (difference / weight) * 127
+        val = difference * 127.0
+
+        val += self.min_val
+
+        val = 127.0 if val > 127.0 else val
+        return int(val)
