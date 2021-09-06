@@ -14,7 +14,7 @@ class MidiNote:
     @classmethod
     def midi_note(cls, joint, user, vector):
         if joint in joint_notes.keys():
-            joint_note = joint_notes[joint]
+            joint_note = joint_notes[joint]["note"]
             note_velocity = JointHandler.midi_note(joint, vector)
 
             if note_velocity > 0.0:

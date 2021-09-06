@@ -8,7 +8,7 @@ joint_ccs = app.constants.joint_map.JOINT_CCS
 
 def midi_cc(joint, user, vector):
     if joint in joint_ccs.keys():
-        joint_cc = joint_ccs[joint]
+        joint_cc = joint_ccs[joint]["cc"]
         cc_val = JointHandler.midi_cc(joint, vector)
 
         outport.send(mido.Message("control_change",

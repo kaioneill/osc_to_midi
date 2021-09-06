@@ -4,14 +4,15 @@ from app.util.vector_difference import vector_difference
 
 class ManyAboveTrigger:
 
-    def __init__(self):
+    def __init__(self, threshold=0.03):
         self.last_vector = [0.0, 0.0, 0.0]
         self.min_velocity = 20.0
         self.paused = False
+        self.threshold = threshold
 
     def many_above_trigger(self, vector):
         if not self.paused:
-            val = above_threshold(self.last_vector, vector)
+            val = above_threshold(self.last_vector, vector, self.threshold)
             self.last_vector = vector
 
             if val > 0.0:

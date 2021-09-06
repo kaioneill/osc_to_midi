@@ -12,11 +12,11 @@ class JointHandler:
     streams = {}
 
     for joint in joint_notes:
-        triggers[joint] = ManyAboveTrigger()
+        triggers[joint] = ManyAboveTrigger(joint_notes[joint]["threshold"])
 
     for joint in joint_ccs:
-        # streams[joint] = ValueStream()
-        streams[joint] = ValueStreamSum()
+        # streams[joint] = ValueStream(joint_ccs[joint]["range"])
+        streams[joint] = ValueStreamSum(joint_ccs[joint]["range"])
 
     @classmethod
     def midi_note(cls, joint, vector):

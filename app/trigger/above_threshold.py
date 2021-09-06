@@ -1,8 +1,7 @@
 from app.util.vector_difference import vector_difference
 
 
-def above_threshold(vector1, vector2):
-    threshold = 0.03
+def above_threshold(vector1, vector2, threshold=0.03):
     max = 9.0
 
     val = 0.0

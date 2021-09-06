@@ -1,39 +1,142 @@
 JOINT_NOTES = {
-    # "head": 72,
-    # "neck": 60,
-    # "torso": 67,
-    # "r_shoulder": 60,
-    # "r_elbow": 60,
-    "r_hand": 60,
-    # "l_shoulder": 60,
-    # "l_elbow": 60,
-    "l_hand": 48,
-    # "r_hip": 60,
-    # "r_knee": 60,
-    # "r_ankle": 60,
-    "r_foot": 24,
-    # "l_hip": 60,
-    # "l_knee": 60,
-    # "l_ankle": 60,
-    # "l_foot": 55
+    "l_hand": {
+        "note": 48,
+        "threshold": 0.06
+    },
+    "r_hand": {
+        "note": 60,
+        "threshold": 0.03
+    },
+    "torso": {
+        "note": 24,
+        "threshold": 0.03
+    },
+    # "head": {
+    #     "note": 24,
+    #     "threshold": 0.04
+    # },
+    # "neck": {
+    #     "note": 60,
+    #     "threshold": 0.03
+    # },
+    # "r_shoulder": {
+    #     "note": 60,
+    #     "threshold": 0.03
+    # },
+    # "r_elbow": {
+    #     "note": 60,
+    #     "threshold": 0.03
+    # },
+    # "l_shoulder": {
+    #     "note": 60,
+    #     "threshold": 0.03
+    # },
+    # "l_elbow": {
+    #     "note": 48,
+    #     "threshold": 0.06
+    # },
+    # "r_hip": {
+    #     "note": 60,
+    #     "threshold": 0.03
+    # },
+    # "r_knee": {
+    #     "note": 60,
+    #     "threshold": 0.06
+    # },
+    # "r_ankle": {
+    #     "note": 60,
+    #     "threshold": 0.03
+    # },
+    # "r_foot": {
+    #     "note": 24,
+    #     "threshold": 0.2
+    # },
+    # "l_hip": {
+    #     "note": 60,
+    #     "threshold": 0.03
+    # },
+    # "l_knee": {
+    #     "note": 60,
+    #     "threshold": 0.03
+    # },
+    # "l_ankle": {
+    #     "note": 60,
+    #     "threshold": 0.03
+    # },
+    # "l_foot": {
+    #     "note": 55,
+    #     "threshold": 0.03
+    # }
 }
 
+
 JOINT_CCS = {
-    # "head": 17,
-    # "neck": 17,
-    # "torso": 17,
-    # "r_shoulder": 17,
-    # "r_elbow": 17,
-    # "r_hand": 43,
-    # "l_shoulder": 17,
-    # "l_elbow": 17,
-    "l_hand": 17,
-    # "r_hip": 17,
-    # "r_knee": 17,
-    # "r_ankle": 17,
-    # "r_foot": 17,
-    # "l_hip": 17,
-    # "l_knee": 17,
-    # "l_ankle": 17,
-    # "l_foot": 17
+    # "l_hand": {
+    #     "cc": 18,
+    #     "range": (20, 127)
+    # },
+    # "r_hand": {
+    #     "cc": 20,
+    #     "range": (50, 127)
+    # },
+    # "torso": {
+    #     "cc": 19,
+    #     "range": (20, 127)
+    # },
+    "head": {
+        "cc": 20,
+        "range": (50, 127)
+    },
+    # "neck": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "r_shoulder": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "r_elbow": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "l_shoulder": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "l_elbow": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "r_hip": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "r_knee": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "r_ankle": {
+    #     "cc": 19,
+    #     "range": (20, 127)
+    # },
+    # "r_foot": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "l_hip": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "l_knee": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "l_ankle": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # },
+    # "l_foot": {
+    #     "cc": 17,
+    #     "range": (20, 127)
+    # }
 }
